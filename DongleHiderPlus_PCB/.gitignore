@@ -26,4 +26,9 @@ fp-info-cache
 
 # Exported BOM files
 *.xml
-*.csv
+# *.csv
+
+*.kicad_sch_old
+*.lck
+
+jlcpcb/gerber
