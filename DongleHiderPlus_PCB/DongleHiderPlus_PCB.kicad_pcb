@@ -11,6 +11,8 @@
 		(0 "F.Cu" signal)
 		(1 "In1.Cu" signal)
 		(2 "In2.Cu" signal)
+		(3 "In3.Cu" signal)
+		(4 "In4.Cu" signal)
 		(31 "B.Cu" signal)
 		(32 "B.Adhes" user "B.Adhesive")
 		(33 "F.Adhes" user "F.Adhesive")
@@ -58,7 +60,7 @@
 			)
 			(layer "dielectric 1"
 				(type "prepreg")
-				(thickness 0.2104)
+				(thickness 0.1)
 				(material "FR4")
 				(epsilon_r 4.5)
 				(loss_tangent 0.02)
@@ -69,7 +71,7 @@
 			)
 			(layer "dielectric 2"
 				(type "core")
-				(thickness 0.25)
+				(thickness 0.1504)
 				(material "FR4")
 				(epsilon_r 4.5)
 				(loss_tangent 0.02)
@@ -80,7 +82,29 @@
 			)
 			(layer "dielectric 3"
 				(type "prepreg")
-				(thickness 0.2104)
+				(thickness 0.1)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In3.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 4"
+				(type "core")
+				(thickness 0.1504)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In4.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 5"
+				(type "prepreg")
+				(thickness 0.1)
 				(material "FR4")
 				(epsilon_r 4.5)
 				(loss_tangent 0.02)
@@ -1053,7 +1077,7 @@
 			(at 0 0)
 			(size 2.2 2.2)
 			(drill 2.2)
-			(layers "*.Mask" "F.Cu" "In1.Cu" "In2.Cu" "B.Cu")
+			(layers "*.Mask" "F.Cu" "In1.Cu" "In4.Cu" "B.Cu")
 			(uuid "07b54141-a220-41c1-b490-96f13fa4cea5")
 		)
 	)
@@ -24542,7 +24566,7 @@
 		(start 108.0275 56.05)
 		(end 108.0275 56.1291)
 		(width 0.5)
-		(layer "In2.Cu")
+		(layer "In4.Cu")
 		(net 1)
 		(uuid "c2f94d20-7c53-4c4e-a17b-9e302feed46f")
 	)
@@ -24550,7 +24574,7 @@
 		(start 108.0275 56.1291)
 		(end 106.913 57.2436)
 		(width 0.5)
-		(layer "In2.Cu")
+		(layer "In4.Cu")
 		(net 1)
 		(uuid "e4011f2e-cb65-4df1-ab5f-5834a5c27c88")
 	)
@@ -26341,7 +26365,7 @@
 	(zone
 		(net 1)
 		(net_name "GND")
-		(layers "F.Cu" "In1.Cu" "In2.Cu" "B.Cu")
+		(layers "F.Cu" "In1.Cu" "In4.Cu" "B.Cu")
 		(uuid "3ac3cb55-87e8-4fc5-a4f3-810a9b978055")
 		(name "GND")
 		(hatch edge 0.5)
@@ -27264,7 +27288,7 @@
 			)
 		)
 		(filled_polygon
-			(layer "In2.Cu")
+			(layer "In4.Cu")
 			(pts
 				(xy 91.786171 55.563236) (xy 91.904442 55.574888) (xy 91.928265 55.579629) (xy 92.036114 55.612349)
 				(xy 92.058564 55.621649) (xy 92.084527 55.635528) (xy 92.157959 55.674783) (xy 92.17817 55.688289)
@@ -27648,7 +27672,7 @@
 			)
 		)
 		(filled_polygon
-			(layer "In2.Cu")
+			(layer "In4.Cu")
 			(pts
 				(xy 108.419253 51.294002) (xy 108.465008 51.346806) (xy 108.474952 51.415964) (xy 108.445927 51.47952)
 				(xy 108.411231 51.507372) (xy 108.381376 51.523528) (xy 108.381365 51.523535) (xy 108.198222 51.666081)
